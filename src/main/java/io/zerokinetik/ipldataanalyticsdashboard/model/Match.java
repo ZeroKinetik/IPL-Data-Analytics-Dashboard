@@ -3,7 +3,13 @@ package io.zerokinetik.ipldataanalyticsdashboard.model;
 import java.time.LocalDate;
 import java.time.YearMonth;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Match {
+    
+    @Id
     private long id;
     private YearMonth season;
     private String city;

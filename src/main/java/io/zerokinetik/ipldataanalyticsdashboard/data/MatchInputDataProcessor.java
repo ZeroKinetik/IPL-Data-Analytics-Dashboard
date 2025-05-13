@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 
 import org.springframework.batch.item.ItemProcessor;
 
+import io.micrometer.common.lang.NonNull;
 import io.zerokinetik.ipldataanalyticsdashboard.model.Match;
 
 public class MatchInputDataProcessor implements ItemProcessor<MatchInput, Match> {
